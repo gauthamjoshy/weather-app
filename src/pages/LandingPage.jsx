@@ -35,7 +35,7 @@ function LandingPage() {
         <div style={{backgroundImage:"url('https://www.severe-weather.eu/wp-content/uploads/2023/08/SST_World_Map.png')", width:"100%", height:"100vh", backgroundSize:"cover", backgroundRepeat:"no-repeat"}} className='container-fluid'>
             <div  className="container">
                 
-                    <h1 className='text-center text-light fw-bolder pt-5'>Weather Now</h1>
+                    <h1 className='text-center text-light fw-bolder pt-5'><u>Weather Now</u></h1>
                     
                 <div className="row p-5">
                     <div className="col-2"></div>
