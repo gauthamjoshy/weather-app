@@ -32,7 +32,7 @@ function LandingPage() {
   return (
     <>
   
-        <div style={{backgroundImage:"url('https://www.severe-weather.eu/wp-content/uploads/2023/08/SST_World_Map.png')", width:"100%", height:"100vh", backgroundSize:"cover", backgroundRepeat:"no-repeat"}} className='container-fluid'>
+        <div style={{backgroundImage:"url('https://static.vecteezy.com/system/resources/thumbnails/043/408/893/small/an-approaching-thunderstorm-in-a-flowering-rapeseed-field-photo.jpg')", width:"100%", height:"100vh", backgroundSize:"cover", backgroundRepeat:"no-repeat"}} className='container-fluid'>
             <div  className="container">
                 
                     <h1 className='text-center text-light fw-bolder pt-5'><u>Weather Now</u></h1>
@@ -52,9 +52,9 @@ function LandingPage() {
                         <div className="row">
                     <div className="col-2"></div>
                     <div className="col-8 border shadow rounded-5 p-5 ">
-                        <h2 className='text-primary text-center'>City : {city.data? city.data.name : ""}</h2>
+                        <h2 className='text-danger text-center'>City : {city.data? city.data.name : ""}</h2>
                         <h1 className='text-center text-warning fw-bolder'>Temprature : {city.data? city.data.main.feels_like: ""}°C </h1>
-                        <h4 className='text-primary-emphasis text-center'>Country : {city.data? city.data.sys.country : ""}</h4>
+                        <h4 className='text-success text-center'>Country : {city.data? city.data.sys.country : ""}</h4>
                         <h4 className='text-primary text-center'>Humidity : {city.data? city.data.main.humidity : ""}%</h4>
                         <h4 className='text-primary text-center'>Wind Speed : {city.data? city.data.wind.speed : ""}m/s</h4>
                         <h4 className='text-info text-center '>{city.data? city.data.weather[0].description : ""}</h4>
